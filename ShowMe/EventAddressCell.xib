@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Roboto-Regular.ttf">
+            <string>Roboto-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="eventAddressCell" rowHeight="168" id="KGk-i7-Jjw" customClass="EventAddressCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="167"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="166"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ADDRESS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dbS-oG-jT5">
+                        <rect key="frame" x="8" y="8" width="304" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="h2b-4Q-EKs"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="13"/>
+                        <color key="textColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dV7-Us-gep">
+                        <rect key="frame" x="0.0" y="37" width="320" height="129.5"/>
+                        <connections>
+                            <outlet property="delegate" destination="-1" id="rOF-Bo-teC"/>
+                        </connections>
+                    </mapView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottomMargin" secondItem="dV7-Us-gep" secondAttribute="bottom" constant="-8" id="E1L-lu-t6r"/>
+                    <constraint firstItem="dV7-Us-gep" firstAttribute="top" secondItem="dbS-oG-jT5" secondAttribute="bottom" constant="8" id="Fcc-5p-Sb9"/>
+                    <constraint firstItem="dV7-Us-gep" firstAttribute="top" secondItem="dbS-oG-jT5" secondAttribute="bottom" constant="8" id="fvV-KJ-CdZ"/>
+                    <constraint firstItem="dV7-Us-gep" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="-8" id="hc9-lz-N8d"/>
+                    <constraint firstItem="dbS-oG-jT5" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="kzF-0O-U1x"/>
+                    <constraint firstItem="dV7-Us-gep" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="-8" id="nOP-Zy-fuQ"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="dV7-Us-gep" secondAttribute="trailing" constant="-8" id="nwA-KY-TtM"/>
+                    <constraint firstItem="dbS-oG-jT5" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="rWr-FJ-6v2"/>
+                    <constraint firstItem="dbS-oG-jT5" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="vIR-dj-m9D"/>
+                </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="Fcc-5p-Sb9"/>
+                        <exclude reference="hc9-lz-N8d"/>
+                    </mask>
+                </variation>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="ampView" destination="dV7-Us-gep" id="ZkE-uC-6Vk"/>
+            </connections>
+            <point key="canvasLocation" x="298" y="314.5"/>
+        </tableViewCell>
+    </objects>
+</document>

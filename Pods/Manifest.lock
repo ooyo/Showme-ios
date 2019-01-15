@@ -1,0 +1,64 @@
+PODS:
+  - BIZPopupView (1.0.0):
+    - TPKeyboardAvoiding
+  - BLKFlexibleHeightBar (1.0.2)
+  - CBZSplashView (1.0.0)
+  - CDRTranslucentSideBar (1.0.3)
+  - CSStickyHeaderFlowLayout (0.2.11)
+  - DACircularProgress (2.3.1)
+  - HexColors (2.2.1)
+  - IDMPhotoBrowser (1.8.4):
+    - DACircularProgress
+    - pop
+    - SDWebImage
+  - JPSThumbnailAnnotation (1.0.0)
+  - JVFloatLabeledTextField (1.1.1)
+  - Masonry (1.0.2)
+  - MHVideoPhotoGallery (2.1.3):
+    - Masonry
+    - SDWebImage
+    - TTTAttributedLabel (= 1.13.3)
+  - pop (1.0.9)
+  - SDWebImage (3.8.2):
+    - SDWebImage/Core (= 3.8.2)
+  - SDWebImage/Core (3.8.2)
+  - SFDraggableDialogView (1.1.5)
+  - TPKeyboardAvoiding (1.3)
+  - TSMessages (0.9.12):
+    - HexColors (~> 2.2.0)
+  - TTTAttributedLabel (1.13.3)
+
+DEPENDENCIES:
+  - BIZPopupView
+  - BLKFlexibleHeightBar
+  - CBZSplashView (~> 1.0.0)
+  - CDRTranslucentSideBar
+  - CSStickyHeaderFlowLayout
+  - IDMPhotoBrowser
+  - JPSThumbnailAnnotation
+  - JVFloatLabeledTextField
+  - MHVideoPhotoGallery
+  - SFDraggableDialogView
+  - TSMessages
+
+SPEC CHECKSUMS:
+  BIZPopupView: 2f16ecbc852baa16e1ef20b67abaa831909ec994
+  BLKFlexibleHeightBar: b27572a69633d8e33f1f2bbc486b04d8e86f742d
+  CBZSplashView: 9ce4cba22024476ff4a97d6433e7347da6376016
+  CDRTranslucentSideBar: b13a1792a8c495ea8f2356846a95bf7119cec7b0
+  CSStickyHeaderFlowLayout: e9bcb1762413f49d7d09e5bd0ae5efd1100116b7
+  DACircularProgress: 4dd437c0fc3da5161cb289e07ac449493d41db71
+  HexColors: abfd172e329dab59888614ccba6f216cec59289d
+  IDMPhotoBrowser: b574fe3229754e701f32df271afbc4ac7e4e1997
+  JPSThumbnailAnnotation: 4b35e87788d903db3fec294e7ef44136b9f741fb
+  JVFloatLabeledTextField: 0e5524b097f102036214dd8279edc8ecf08b5e18
+  Masonry: 7c429b56da9d4ee0bbb3ed77a5ea710d6a5df39e
+  MHVideoPhotoGallery: aa36cdd9b75c6d5a19b48005cddb9b730c2e27e8
+  pop: f667631a5108a2e60d9e8797c9b32ddaf2080bce
+  SDWebImage: 098e97e6176540799c27e804c96653ee0833d13c
+  SFDraggableDialogView: 1ace36b8cb2f52aab82f386d910a286f0c073997
+  TPKeyboardAvoiding: a5138f318c06fb3e151f886e18ce4a72695d9cbe
+  TSMessages: c8cc7b80f2a833af533872cd02010cac061532cc
+  TTTAttributedLabel: 6f3174aef8e738f44dff97c2eb7d8184f6ab6277
+
+COCOAPODS: 0.39.0
